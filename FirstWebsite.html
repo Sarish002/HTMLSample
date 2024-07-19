@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title style = "font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;text-align: center;">Hello!</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;font-family: 'Courier New', Courier, monospace;" id = "H1F">A Few Things in HTML</h1>
+        <hr>
+        <h5>1. Click the Below Link to Open Wikipedia!</h5>
+        <a href="https://www.wikipedia.org" style = "font-size: xx-large;" >
+            Wikipedia
+        </a>
+        <br>
+        <h5>2. This is an MP4 file!!</h5>
+        <video controls src="file_example_MP4_480_1_5MG.mp4"></video>
+        <h5>3. Listen to the MP3!!</h5>
+        <audio controls src="file_example_MP3_1MG.mp3">
+        </audio>
+        <h5>4. See the PNG!!</h5>
+        <a href = "https://en.wikipedia.org/wiki/Java_(programming_language)">
+            <img src="images.png" height=100 title="Java Logo"></img>
+        </a>
+        <h5>5. Type in!</h5>
+        <form>
+            <div>
+                <label for="Name"  id = "N" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">Name: </label>
+                <input type = "text" id="Name" name = "Your name: " style="font-size: xx-large; font-family: 'Courier New', Courier, monospace;">
+            </div>
+            <br>
+            <div>
+                <label for="Age"  id = "A" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">Age: </label>
+                <input type="number" id="Age" style="font-size: xx-large; font-family: 'Courier New', Courier, monospace;">
+            </div>
+            <br>
+            <div>
+                <label for="Email"  id = "E" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">Email: </label>
+                <input type="email" id="Email" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">
+            </div>
+            <br>
+            <div>
+                <label for="Birthday"  id = "B" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">Birthday: </label>
+                <input type="date" id="Birthday" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">
+            </div>
+            <br>
+            <div>
+                <label for="Gender" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">Male</label>
+                <input type="radio" name="Gen" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;" value="Male">
+                <br>
+                <label for="Gender" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">Female</label>
+                <input type="radio" name="Gen" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;" value="Female">
+            </div>
+            <br>
+            <div>
+                <label for="FavCol" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">Favorite Color:  </label>
+                <input type="color" id = "Col" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">
+            </div>
+            <br>
+            <div>
+                <label for="Education" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">Education:  </label>
+                <select id = "Select" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">
+                    <option>M. Ed</option>
+                    <option>B. Ed</option>
+                    <option>B. Sc</option>
+                    <option>MBBS</option>
+                    <option>M. Sc</option>
+                    <option>B. Tech</option>
+                    <option>M. Tech</option>
+                    <option>PHD</option>
+                    <option>LLB</option>
+                    <option>B. Pharm</option>
+                    <option>M. Pharm</option>
+                    <option>ME</option>
+                    <option>BE</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <button onclick=DoIt id = "Sub" style="font-family: 'Courier New', Courier, monospace; font-size: xx-large;">Submit?</button>
+            </div>
+
+        <script>
+            function DoIt(){
+                let username, age, birthday, email;
+                username = document.getElementById("Name").value;
+                age = document.getElementById("Age").value;
+                birthday = document.getElementById("Birthday").value;
+                email = document.getElementById("Email").value;
+                document.getElementById("Name").remove();
+                document.getElementById("Age").remove();
+                document.getElementById("Birthday").remove();
+                document.getElementById("Email").remove();
+            }
+        </script>
+        </form>
+        <h5>5. Website with code!</h5>
+        <br>
+        <iframe src = "https://media.geeksforgeeks.org/wp-content/uploads/20240206111438/uni2.html" height=370 ></iframe>
+        <h5>6. Auto Fill!</h5>
+        <input type="text" placeholder="Country" list="country" style="font-family: 'Courier New', Courier, monospace; font-size: x-large;">
+        <datalist id="country">
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Australia</option>
+        </datalist>
+        <h5>7. FAQ</h5>
+        <details style="list-style-type: circle;">            
+            <summary style="font-family: 'Courier New', Courier, monospace;">What is "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam cumque minus ab doloremque iusto sit saepe, eaque, animi corrupti temporibus? Quam quod quos ex, velit ipsam odit itaque accusamus."?</summary>
+            <p style="font-family: 'Courier New', Courier, monospace;">Answer: </p>
+            <p style="font-family: 'Courier New', Courier, monospace;">The poem <p style="font-family: 'Courier New', Courier, monospace;">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam cumque minus ab doloremque iusto sit saepe, eaque, animi corrupti temporibus? Quam quod quos ex, velit ipsam odit itaque accusamus."</p><p style="font-family: 'Courier New', Courier, monospace;">is a latin poem often used as a placeholder for optional text.</p></p>
+        </details>
+        
+    </body>
+</html>
